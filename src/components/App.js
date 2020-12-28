@@ -27,7 +27,7 @@ export default class App extends Component {
 
     searchData(keyword) {
 
-        let api = "http://www.omdbapi.com/?s=" + keyword + "&apikey=e405d9ae";
+        let api = "https://www.omdbapi.com/?s=" + keyword + "&apikey=e405d9ae";
         this.setState({
             loading : true
         })
@@ -57,7 +57,7 @@ export default class App extends Component {
         this.setState({
             loading : true
         })
-        let api = "http://www.omdbapi.com/?i=" + id + "&apikey=e405d9ae";
+        let api = "https://www.omdbapi.com/?i=" + id + "&apikey=e405d9ae";
         axios.get(api)
             .then((response) => {
 
